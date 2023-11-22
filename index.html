@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy bird</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/fontello.css">
+</head>
+
+<body>
+
+    <canvas started="false" id="canvas" width="288" height="512"></canvas>
+    <button id="btn-start" class="play-btn">
+        <div class="rectangle"></div>
+    </button>
+    <h1 class="score">
+        <button id="menu-btn" class="menu-btn"><i class="icon-cog"></i></button>
+        Score: <span id="score">0</span>
+    </h1>
+
+    <div id="menu" class="menu_change-bird menu-closed">
+        <div id="none" class="card-bird">
+            <img src="./img/birds/blue-bird.png" alt="">
+        </div>
+        <div id="green-bird_in-game" class="card-bird">
+            <img src="./img/birds/green-bird.png" alt="">
+        </div>
+        <div id="none" class="card-bird">
+            <img src="./img/birds/grey-bird.png" alt="">
+        </div>
+    </div>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/menu.js"></script>
+
+</body>
+</html>

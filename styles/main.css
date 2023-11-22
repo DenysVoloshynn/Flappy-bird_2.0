@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Pixelify Sans";
+    src: url("../fonts/PixelifySans-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.859);
+}
+
+canvas {
+    /* margin: auto; */
+    /* position: absolute; */
+    /* top: 10px;
+    left: calc(50% - 288px / 2);
+    display: block; */
+    display: block;
+    margin: 30px auto 0px auto;
+}
+
+.play-btn {
+    height: 80px;
+    width: 80px;
+    background-color: green;
+    border: 0px;
+    border-radius: 50%;
+    position: relative;
+    top: -330px;
+    left: calc(50% - 40px);
+    transition: all 0.4s ease;
+    border: 2px solid yellow;
+}
+
+.play-btn:hover {
+    cursor: pointer;
+}
+
+.invisible {
+    transform: scale(1.2);
+    opacity: 0%;
+}
+
+.rectangle {
+    height: 0px;
+    width: 0px;
+    border-top: 25px solid transparent;
+    border-left: 45px solid yellow;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    left: 23px;
+    top: 15px;
+}
+
+.score {
+    text-align: center;
+    font-family: Pixelify Sans;
+    font-size: 38px;
+    margin-top: -40px;
+}
+
+.menu-btn {
+    width: 53px;
+    height: 53px;
+    font-size: 35px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-right: 13px;
+}
+
+.menu_change-bird {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(205, 226, 21);
+    opacity: 100%;
+    left: calc(50% - (500px / 2));
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.menu-closed {
+    display: none;
+}
+
+.card-bird {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 30px 0 30px 0;
+}
+
+.card-bird:hover {
+    transform: scale(1.1);
+}
+
+.card-bird img {
+    width: 60%;
+    display: block;
+}
+
